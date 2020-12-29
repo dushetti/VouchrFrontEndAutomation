@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-29T16:35:15Z" name="Default suite" finished-at="2020-12-29T16:35:48Z" duration-ms="33274">
+  <suite started-at="2020-12-29T17:40:39Z" name="Default suite" finished-at="2020-12-29T17:41:12Z" duration-ms="33295">
     <groups>
     </groups>
-    <test started-at="2020-12-29T16:35:15Z" name="Default test" finished-at="2020-12-29T16:35:48Z" duration-ms="33274">
+    <test started-at="2020-12-29T17:40:39Z" name="Default test" finished-at="2020-12-29T17:41:12Z" duration-ms="33295">
       <class name="PACKAGE1.TemplateCreation">
-        <test-method is-config="true" signature="configuration()[pri:0, instance:PACKAGE1.TemplateCreation@436a4e4b]" started-at="2020-12-29T16:35:10Z" name="configuration" finished-at="2020-12-29T16:35:15Z" duration-ms="5201" status="PASS">
+        <test-method is-config="true" signature="configuration()[pri:0, instance:PACKAGE1.TemplateCreation@436a4e4b]" started-at="2020-12-29T17:40:34Z" name="configuration" finished-at="2020-12-29T17:40:39Z" duration-ms="5205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configuration -->
-        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method, java.lang.String)[pri:0, instance:PACKAGE1.TemplateCreation@436a4e4b]" started-at="2020-12-29T16:35:15Z" name="beforeEach" finished-at="2020-12-29T16:35:17Z" duration-ms="1814" status="PASS">
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method, java.lang.String)[pri:0, instance:PACKAGE1.TemplateCreation@436a4e4b]" started-at="2020-12-29T17:40:39Z" name="beforeEach" finished-at="2020-12-29T17:40:41Z" duration-ms="1922" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,23 +27,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEach -->
-        <test-method signature="Templatecreation()[pri:0, instance:PACKAGE1.TemplateCreation@436a4e4b]" started-at="2020-12-29T16:35:17Z" name="Templatecreation" finished-at="2020-12-29T16:35:48Z" duration-ms="31445" status="FAIL">
+        <test-method signature="Templatecreation()[pri:0, instance:PACKAGE1.TemplateCreation@436a4e4b]" started-at="2020-12-29T17:40:41Z" name="Templatecreation" finished-at="2020-12-29T17:41:12Z" duration-ms="31353" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for presence of any elements located by By.id: slide-5633889397637120-4850061615824896 (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'abhinavdushettis-MacBook-Pro.local', ip: '2607:fea8:541f:c560:0:0:0:fa2b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/7q/rsrjx2l16f3...}, goog:chromeOptions: {debuggerAddress: localhost:62474}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: c49ee356a030ca5347588e3d421add92]]>
+              <![CDATA[Expected condition failed: waiting for presence of any elements located by By.id: slide-5633889397637120-4850061615824896 (tried for 30 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of any elements located by By.id: slide-5633889397637120-4850061615824896 (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'abhinavdushettis-MacBook-Pro.local', ip: '2607:fea8:541f:c560:0:0:0:fa2b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/7q/rsrjx2l16f3...}, goog:chromeOptions: {debuggerAddress: localhost:62474}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: c49ee356a030ca5347588e3d421add92
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at vouchrpages.DiscoverPage.selectTemplateandAddMedia(DiscoverPage.java:89)
@@ -73,13 +63,39 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
+  (Session info: chrome=87.0.4280.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'abhinavdushettis-MacBook-Pro.local', ip: '2607:fea8:541f:c560:0:0:0:fa2b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/7q/rsrjx2l16f3...}, goog:chromeOptions: {debuggerAddress: localhost:64318}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 56f4377ba28e4205848d067f2c102ae0
+*** Element info: {Using=id, value=slide-5633889397637120-4850061615824896}
+at jdk.internal.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:376)
+at org.openqa.selenium.By$ById.findElements(By.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+at org.openqa.selenium.support.ui.ExpectedConditions$11.apply(ExpectedConditions.java:328)
+at org.openqa.selenium.support.ui.ExpectedConditions$11.apply(ExpectedConditions.java:325)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 27 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Templatecreation -->
-        <test-method is-config="true" signature="afterEachTestCase(org.testng.ITestResult)[pri:0, instance:PACKAGE1.TemplateCreation@436a4e4b]" started-at="2020-12-29T16:35:48Z" name="afterEachTestCase" finished-at="2020-12-29T16:35:48Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterEachTestCase(org.testng.ITestResult)[pri:0, instance:PACKAGE1.TemplateCreation@436a4e4b]" started-at="2020-12-29T17:41:12Z" name="afterEachTestCase" finished-at="2020-12-29T17:41:12Z" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -90,7 +106,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTestCase -->
-        <test-method is-config="true" signature="afterAll()[pri:0, instance:PACKAGE1.TemplateCreation@436a4e4b]" started-at="2020-12-29T16:35:53Z" name="afterAll" finished-at="2020-12-29T16:35:53Z" duration-ms="210" status="PASS">
+        <test-method is-config="true" signature="afterAll()[pri:0, instance:PACKAGE1.TemplateCreation@436a4e4b]" started-at="2020-12-29T17:41:17Z" name="afterAll" finished-at="2020-12-29T17:41:18Z" duration-ms="229" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterAll -->

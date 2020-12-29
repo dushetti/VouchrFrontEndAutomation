@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [VouchrFrontEnd]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="VouchrFrontEnd(failed)" verbose="0">
+    <classes>
+      <class name="PACKAGE1.TemplateCreation">
+        <methods>
+          <include name="afterEachTestCase"/>
+          <include name="configuration"/>
+          <include name="beforeEach"/>
+          <include name="afterAll"/>
+          <include name="Templatecreation"/>
+        </methods>
+      </class> <!-- PACKAGE1.TemplateCreation -->
+    </classes>
+  </test> <!-- VouchrFrontEnd(failed) -->
+</suite> <!-- Failed suite [VouchrFrontEnd] -->
