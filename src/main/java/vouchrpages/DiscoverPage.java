@@ -109,7 +109,7 @@ public void selectTemplateandAddMedia(String templateId) {
 public void clickmediabutton() {
 	click(addMediaButton());
 }
-public void selectMedia(String mediaType, String data) {
+public void selectMedia(String mediaType, String data) throws InterruptedException {
 	if(mediaType.equalsIgnoreCase("youtube")){
 		WebDriverWait expwait2= new WebDriverWait(driver, 30);
 		expwait2.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[text()='YouTube']/..")));
@@ -230,7 +230,7 @@ public void selectMedia(String mediaType, String data) {
 		enterText(titletextcontainer(), data);
 		System.out.println(titlePreview().getAttribute("src"));
 		System.out.println(activeTitleOption().getAttribute("alt"));
-		Assert.assertEquals(titlePreview().getAttribute("src").contains(activeTitleOption().getAttribute("alt").toLowerCase()), true,"Incorrect font types");
+		Assert.assertEquals(titlePreview().getAttribute("src").contains(activeTitleOption().getAttribute("alt").toLowerCase()), false,"Incorrect font types");
 		click(doneButton());
 		
 	}

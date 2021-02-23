@@ -13,7 +13,7 @@ public class TemplateCreation extends BaseTest {
 		String mediaOptions="";
 		driver.get("https://static.vouchrsdk.com/eq/stage/discover/");
 		DiscoverPage discoverpage = new DiscoverPage(driver);
-		discoverpage.selectTemplateandAddMedia("slide-5633889397637120-4850061615824896");
+		discoverpage.selectTemplateandAddMedia("slide-6008016857989120-5687933321347072");
 		discoverpage.selectMedia("gif", "oops");
 		discoverpage.clickmediabutton();
 		discoverpage.selectMedia("youtube", "zelle");

@@ -11,10 +11,10 @@ public class TemplateGameOnPreviewAccess extends BaseTest{
 	public void templategameonpreviewaccess() throws InterruptedException {
 		driver.get("https://static.vouchrsdk.com/eq/stage/discover/");
 		DiscoverPage discoverpage = new DiscoverPage(driver);
-		discoverpage.selectTemplateandAddMedia("slide-5633889397637120-4850061615824896");
+		discoverpage.selectTemplateandAddMedia("slide-6008016857989120-5687933321347072");
 		PreviewPage previewpage = new PreviewPage(driver);
 		previewpage.ValidatePreview();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		AccessingGameOnPreviewPage accessinggameonpreview = new AccessingGameOnPreviewPage(driver);
 		accessinggameonpreview.playthegame();
 		

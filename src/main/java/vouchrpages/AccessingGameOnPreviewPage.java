@@ -13,7 +13,7 @@ public class AccessingGameOnPreviewPage extends BaseTest {
 	public AccessingGameOnPreviewPage(WebDriver driver) {
 		this.driver= driver;
 	}
-	private WebElement Openreveal() {
+	private WebElement Openreveal1() {
 		return driver.findElement(By.xpath("//button[contains(text(),'OPEN')]"));
 	}
 	private WebElement SkipButton() {
@@ -33,12 +33,13 @@ public class AccessingGameOnPreviewPage extends BaseTest {
 	}
 	
 	public void playthegame() throws InterruptedException {
-		Thread.sleep(3000);
+		Thread.sleep(7000);
+		driver.switchTo().frame(0);
 		//click(Audiomute());
 		//JavascriptExecutor jse=(JavascriptExecutor)driver;
 		//jse.executeScript("arguments[0]. click();",Openreveal());
 		
-		click(Openreveal());
+		click(Openreveal1());
 		Thread.sleep(1000);
 		if(GamePlayButton().isEnabled()) {
 			click(GamePlayButton());

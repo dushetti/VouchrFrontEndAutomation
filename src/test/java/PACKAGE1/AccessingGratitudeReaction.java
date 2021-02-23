@@ -1,15 +1,16 @@
 package PACKAGE1;
+
 import org.testng.annotations.Test;
 
 import framework.BaseTest;
 import vouchrpages.DiscoverPage;
+import vouchrpages.GetGratitudeLink;
 import vouchrpages.RevealLink;
 import vouchrpages.RevealPage;
 
-
-public class RevealAccess extends BaseTest {
+public class AccessingGratitudeReaction extends BaseTest {
 	@Test
-	public void revealaccess() throws InterruptedException {
+	public void accessinggratitudereaction() throws InterruptedException {
 		driver.get("https://static.vouchrsdk.com/eq/stage/discover/");
 		DiscoverPage discoverpage = new DiscoverPage(driver);
 		discoverpage.selectTemplateandAddMedia("slide-6008016857989120-5687933321347072");
@@ -18,12 +19,10 @@ public class RevealAccess extends BaseTest {
 		String Reveal = reveallink.GetReveallink();
 		driver.get(Reveal);
 		Thread.sleep(4000);
-		RevealPage revealpage = new RevealPage(driver);
-		revealpage.AccessReveal();
-		revealpage.validateaudiobutton(1);
-		revealpage.validatereplaybutton(1);
-		revealpage.AccessGratitudeContent();
-		driver.quit();
-	}
-	
+		GetGratitudeLink GetGratitudeLink = new GetGratitudeLink(driver);
+		GetGratitudeLink.AccessReveal();
+		GetGratitudeLink.AccessGratitudeContent();
+		GetGratitudeLink.GetGratitudeLink();
+		
+}
 }

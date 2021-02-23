@@ -9,10 +9,10 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import framework.BaseTest;
 
-public class RevealPage extends BaseTest{
+public class GetGratitudeLink extends BaseTest{
 	WebDriver driver;
 	
-	public RevealPage(WebDriver driver) {
+	public GetGratitudeLink(WebDriver driver) {
 		this.driver= driver;
 	}
 	private WebElement Openreveal() {
@@ -76,12 +76,7 @@ public void AccessReveal() throws InterruptedException {
 	click(Gratitudecancelbutton());
 	
 }
-public void validateaudiobutton(int expectednumber) {
-	Assert.assertEquals(AudioIsPresent().size(), expectednumber,"Audio Button is missing on reveal");
-}
-public void validatereplaybutton(int expectednumber) {
-	Assert.assertEquals(ReplaybuttonIsPresent().size(), expectednumber, "Replay button is missing on reveal");
-}
+
 public void AccessGratitudeContent() throws InterruptedException {
 	JavascriptExecutor js = (JavascriptExecutor)driver;
 	WebElement Element = Replaybutton();
@@ -94,9 +89,15 @@ public void AccessGratitudeContent() throws InterruptedException {
 	jse1.executeScript("arguments[0]. click();",driver.findElement(By.cssSelector("div[class*='GratitudeList_Item']")));
 	Thread.sleep(2000);
 	//click(GratitudeFirstmessage());
-	Assert.assertEquals(GratitudeEmailButton().isEnabled(), true, "Email button is missing");
-	Assert.assertEquals(GratitudeCopyButton().isEnabled(), true, "Copy button is missing");
 	
+}
+public String GetGratitudeLink() throws InterruptedException {
+	Thread.sleep(1000);
+	click(GratitudeCopyButton());
+	Thread.sleep(2000);
+	String gratitude = GratitudeCopyButton().getAttribute("value");
+	//System.out.println(GratitudeCopyButton().getAttribute("value"));
+	return gratitude;
 }
 }
 

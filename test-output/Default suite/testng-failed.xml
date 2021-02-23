@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PACKAGE1.TemplateCreation">
+      <class name="PACKAGE1.AccessingGratitudeReaction">
         <methods>
+          <include name="accessinggratitudereaction"/>
           <include name="afterEachTestCase"/>
           <include name="configuration"/>
           <include name="beforeEach"/>
           <include name="afterAll"/>
-          <include name="Templatecreation"/>
         </methods>
-      </class> <!-- PACKAGE1.TemplateCreation -->
+      </class> <!-- PACKAGE1.AccessingGratitudeReaction -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
